@@ -1,0 +1,318 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color:powderblue;
+    margin:0;
+    padding:0;
+}
+nav {
+    background-color: #4CAF50;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav a:hover {
+    color: aquamarine;
+}
+
+header, nav, section, footer {
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+   background-image: url("electric\ cycle.jpg");
+   margin:0;
+   padding:0;
+   height:150vh;
+   background-attachment:scroll;
+   background-image: no repeat;
+   background-size:cover;
+    color: gold;
+    text-align: center;
+    
+}
+
+header h1 {
+    color:mediumturquoise;
+    font-size: 35px;
+    margin-top: 0;
+}
+
+header h1 span {
+    color:darkorange;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header p {
+    color:crimson;
+    font-family:boroto;
+    font-size: 60px;
+    margin-bottom: 12px;
+    
+}
+
+section {
+    margin: 30px 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    color: #555555;
+}
+
+.explore more {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-color: green;
+    background-color: rgb(0, 128, 11);
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:active {
+    color: rgb(196, 238, 255);
+}
+
+blockquote {
+    margin: 30px 0;
+    padding: 20px;
+    border-left: 4px solid #4CAF50;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#product {
+    background-color:rgb(127,236,255);
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size:30px;
+    position: relative;
+    margin: 0;
+    padding: 50px 20px;;
+    background: cover;
+    margin-top: 0;
+    color:black;
+    
+}
+.product-cards{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color:rgb(128, 0, 38);
+}
+.product-row{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.product-card{
+    width:200px;
+    background-color: white;
+    border-radius: 10px;
+    padding:10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0,1);
+    transition:transform 0.3s ease;
+    margin-right: 8em;
+    margin-left: auto;
+    align-items: flex-end;
+    color:red;
+}
+.product-card img{
+    width:100%;
+    border-radius: 5px;;
+    margin-bottom: 10px;
+}
+.product-card:hover{
+    transform: scale(1.1);
+}
+.product-cards .product-row:last-child .feature-card{
+    margin-top: 20px;
+}
+blockquote span {
+    color:rgb(255, 139, 30);
+}
+
+.product-section {
+    position: relative;
+    overflow: hidden;
+}
+h2{
+    color:midnightblue;
+    font-family: cursive;
+    text-decoration:solid;
+    text-transform: uppercase;
+}
+.btn{
+    font-family:"roboto";
+    font-size: 13px;
+    background: gold;
+    padding:15px;
+    color: black;
+    cursor:pointer;
+    width:100px;
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.btn:hover,btn:focus,.btn:active{
+box-shadow: 0 0 20px rgba(0,0,0,0.5);
+-webkitransform:scale(1.1);
+transform:scale3d(1.1);
+}
+.text{
+    font-family: 'Times New Roman', Times, serif;
+}
+h3{
+    color:rgb(220, 20, 47);
+    font-family:cursive;
+}
+
+.pricing-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+}
+
+.pricing-tier {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px 0 red;
+    transition: transform 0.3s ease;
+}
+
+.pricing-tier:hover {
+    transform: scale(1.05);
+    background-color: chartreuse;
+}
+
+.pricing-tier h4 {
+    color:rgb(128, 0, 38);
+}
+
+.pricing-tier p {
+    color:navy;
+}
+
+.pricing-tier ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.pricing-tier ul li {
+    margin: 5px 0;
+    color:red;
+}
+
+.pricing-button {
+    background-color:rgb(255, 80, 80);
+    color: white;
+    border-color:black;
+    font-size: 20px;
+    font-family: fantasy;
+    vertical-align: bottom;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pricing-button:hover {
+    background-color:rgba(0, 255, 242, 0.945);
+    color: #ffffff;
+}
+#contact {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4CAF50;
+}
+
+.submit-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    background-color:navy;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: yellow;
+    transform: scale(1.05); 
+}
+.container{
+    margin-left:90px;
+    text-align: left;
+    
+}
+.text{
+    text-align:center;
+    
+}

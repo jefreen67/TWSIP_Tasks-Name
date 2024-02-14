@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your e-cycles</title>
+        <link rel="stylesheet" href="style02.css">
+        <style>
+            .myslides{
+            display:none;
+            }
+            .container{
+                position: relative;
+            }
+           .text{
+            position:absolute;
+            text-align: left;
+            top:50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            font-family:fantasy;
+            color:white ;
+            font-weight: 400;
+            font-size:50px ;
+            font-style: bold;
+            
+           }
+</style>
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#product">products</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <br>
+        <br>
+        <br>
+        <h1>OUR QUALITY <span>RIDES FARTHER</span></h1>
+        <p>LET'S RIDE THE<br> FUTURE</p>
+        <br>
+        <br>
+        <br>
+        <div class="explore more">
+            <button>EXPLORE MORE</button>
+        </div>
+    </header>
+            <section id="product">
+        <h1>An EBIKE FOR EVERY TYPE OF<br> RIDER</h1>
+        <div class="product-cards">
+        <div class="product-row">
+        <div class="product-card">
+        <img src="image1.jpg" alt="imge" width="200" height="250" >
+            <p>shop commuter Ebikes</p>
+        </div>
+       <div class="product-card">
+        <img src="image2.jpg" alt="imge2" width="200" height="250">
+        <p>shop fat tire bikes</p>
+        </div>
+        </div>
+        <div class="product-row">
+        <div class="product-card">
+            <img src="image3.jpg" alt="imge3" width="200" height="250">
+            <p>shop cargo Ebikes</p>
+        </div>
+            <div class="product-card">
+                <img src="image4.jpg" alt="imge4" width="200" height="250">
+                <p>shop cruiser Ebikes</p>  
+          </div>
+          </div>
+        </div>
+        </div>
+        </section>
+        </section>
+        <center>
+        <h2 class="w3-center">NEW ARRIVAL</h2>
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src="arr1.jpg" style="width:50%">
+            <img class="mySlides" src="arr2.jpg" style="width:50%">
+            <img class="mySlides" src="arr3.jpg" style="width:50%">
+            <img class="mySlides" src="arr4.jpg" style="width:50%">
+
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </center>
+            <br>
+            <br>
+          </div>
+            <center>
+            <section id="services">
+          <div class="ride"> 
+            <h1>Join the E-bike Revolution for a healthier planet</h1>
+        <p style="font-family:monospace; color:navy;">precision  built.designed for fun.made for you.</p>
+        <br>
+    
+        <div class="btn">TAKE THE RIDE</div>
+        <br>
+        <img src="ride1.png">
+        </center>
+        <div class="container">
+            <img src="dr.jpg" style="width:90%">
+            <div class="text"><b>Get your electric bike resolved at your home</b></div>
+        </div>
+        </div>
+</section>
+<section id="pricing">
+    <div class="pricing-section">
+        <div class="pricing-tier">
+            <h4>Standard Plan</h4>
+            <p>$999</p>
+            <ul>
+                <li>Basic Features included</li>
+                <li>One Year warranty</li>
+            </ul>
+            <button class="pricing-button">Get Started</button>
+        </div>
+
+        <div class="pricing-tier">
+            <h4>Premium Plan</h4>
+            <p>$1,299</p>
+            <ul>
+                <li>Enhanced Features</li>
+                <li>Extended Battery Life</li>
+                <li>Two Years Warranty</li>
+            </ul>
+            <button class="pricing-button">Get Started</button>
+        </div>
+
+    </section>
+    </div>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button class="submit-button">Send Message</button>
+        </div>
+    </section>
+    
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+    <br>
+    <br>
+    </body>  
+    </html>
